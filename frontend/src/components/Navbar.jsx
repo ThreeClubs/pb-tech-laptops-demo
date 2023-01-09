@@ -1,9 +1,9 @@
-function navbar() {
+function Navbar() {
   return (
-    <div>
-      <h1>I'm a navbar</h1>
-    </div>
+    <>
+      <div className="h-9 w-full bg-gray-900"></div>
+    </>
   );
 }
 
-export default navbar;
+export default Navbar;
