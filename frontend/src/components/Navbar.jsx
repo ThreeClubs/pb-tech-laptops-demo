@@ -1,46 +1,233 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStore } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import PBTechLogo from "../assets/img/PBTech_logo.png";
+
 function Navbar() {
   return (
-    <>
-    {/* Top Nav Bar */}
-      <nav className="text-center text-white text-xs h-9 w-full bg-gray-900 py-0 px-20">
-        <div className="h-full w-8 cursor-pointer flex items-center justify-start md:hidden">
+    <header className="font-body">
+      {/* Top Nav Bar */}
+      <nav className="text-center text-white text-xs h-9 w-full md:bg-gray-900 bg-sky-800 py-0 px-20">
+        <div className="h-full w-8 cursor-pointer flex m-auto md:hidden">
           <svg
             className="h-full fill-gray-200"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </div>
-        <ul className="justify-start md:flex hidden lg:pr-64 pr-0">
-          <li className="mx-auto leading-9">
+        <ul className="md:flex justify-between hidden lg:pr-32 pr-0 max-w-7xl whitespace-nowrap">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">PB Tech</a>
           </li>
-          <li className="mx-auto leading-9">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">Hardwired</a>
           </li>
-          <li className="mx-auto leading-9">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">PB Business</a>
           </li>
-          <li className="mx-auto leading-9">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">PB Education</a>
           </li>
-          <li className="mx-auto leading-9">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">PB Wholesale</a>
           </li>
-          <li className="mx-auto leading-9">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">PB Government</a>
           </li>
-          <li className="mx-auto leading-9">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">PB Health</a>
           </li>
-          <li className="mx-auto leading-9">
+          <li className="mx-auto leading-9 w-full">
             <a href="#">PB IoT</a>
           </li>
         </ul>
       </nav>
-    </>
+      {/* Nav Main With Logo, Searchbar, and Auth */}
+      <div className="bg-sky-800 h-full w-full pt-5 px-20 md:block hidden">
+        <div className="text-center w-full text-white text-sm md:flex hidden h-8">
+          <div className="h-full mr-8">
+            <img className="h-full" src={PBTechLogo} alt="PB logo" />
+          </div>
+          <div className="flex items-center w-full">
+            <div className="w-full mr-20 hidden lg:flex">
+              <input
+                type="text"
+                className="block w-full px-4 py-2 text-purple-700 bg-white border focus:outline-none"
+                placeholder="Search..."
+              />
+              <button className="px-4 text-white bg-amber-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="text-xs flex justify-between h-12">
+              <div className="flex justify-center items-center whitespace-nowrap bg-sky-900 rounded-sm m-1">
+                <div className="w-full flex justify-center items-center m-2">
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    className="items-center mr-1 text-sky-500 size-2 fa-xl"
+                  />
+                  Sign-In
+                  <span className="text-sky-600 m-1"> or </span>
+                  Create Account
+                </div>
+              </div>
+              <div className="whitespace-nowrap flex justify-center items-center bg-sky-900 rounded-sm m-1 p-2">
+                Wish List
+                <FontAwesomeIcon
+                  icon={faHeart}
+                  className="items-center mr-1 text-sky-500 size-2 fa-xl m-2"
+                />
+              </div>
+              <div className="flex justify-center items-center bg-sky-900 rounded-sm m-1 p-4">
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  className="items-center mr-1 text-sky-500 size-2 fa-xl mr-4"
+                />
+                <div className="bg-amber-600 rounded-full px-2 py-0.5">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Bottom Nav */}
+
+        <nav className="mt-5 w-full h-11 text-center text-gray-100 text-sm flex justify-between items-center">
+          <div className="w-44 h-full lg:flex hidden  justify-evenly p-2">
+            <div className="cursor-pointer mx-auto leading-4">
+              <svg
+                className="h-full fill-gray-100 p-1"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </div>
+            <span className="text-lg ml-2">Departments</span>
+          </div>
+
+          <ul className="justify-start md:flex hidden lg:pr-32 pr-0 whitespace-nowrap">
+            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+              <div className="dropdown inline-block relative">
+                <button className="inline-flex items-center">
+                  <span className="mr-1">Brands</span>
+                  <svg
+                    className="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
+                  </svg>
+                </button>
+                <ul className="dropdown-menu text-left absolute hidden text-gray-100 pt-1">
+                  <li className="">
+                    <a
+                      className="rounded-t bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      Acer
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      className="bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      Apple
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      className="rounded-b bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      Microsoft
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+              <div className="dropdown inline-block relative">
+                <button className="inline-flex items-center">
+                  <span className="mr-1">Services</span>
+                  <svg
+                    className="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
+                  </svg>
+                </button>
+                <ul className="dropdown-menu text-left absolute hidden text-gray-100 pt-1">
+                  <li className="">
+                    <a
+                      className="rounded-t bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      Repair
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      className="bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      Finance
+                    </a>
+                  </li>
+                  <li className="">
+                    <a
+                      className="rounded-b bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                    >
+                      Custom Builds
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+              Promotions
+            </li>
+            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+              Hot Deals
+            </li>
+            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+              New Arrivals
+            </li>
+            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+              Tax Free Shopping
+            </li>
+            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">BYOD</li>
+          </ul>
+          <ul className="xl:flex hidden whitespace-nowrap text-xs">
+            <li className="p-2">Returns</li>
+            <li className="p-2">Help & Support</li>
+
+            <li className="p-2">
+              <FontAwesomeIcon icon={faStore} className="items-center mr-1" />
+              {}Stores
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }
 
