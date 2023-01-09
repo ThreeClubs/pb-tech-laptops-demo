@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="text-center text-white text-xs h-9 w-full md:bg-gray-900 bg-sky-800 py-0 px-20">
         <div className="h-full w-8 cursor-pointer flex m-auto md:hidden">
           <svg
-            className="h-full fill-gray-200"
+            className="h-full fill-gray-200 hover:fill-amber-600"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -20,28 +20,28 @@ function Navbar() {
           </svg>
         </div>
         <ul className="md:flex justify-between hidden lg:pr-32 pr-0 max-w-7xl whitespace-nowrap">
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB Tech</a>
           </li>
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">Hardwired</a>
           </li>
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB Business</a>
           </li>
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB Education</a>
           </li>
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB Wholesale</a>
           </li>
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB Government</a>
           </li>
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB Health</a>
           </li>
-          <li className="mx-auto leading-9 w-full">
+          <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB IoT</a>
           </li>
         </ul>
@@ -53,7 +53,7 @@ function Navbar() {
             <img className="h-full" src={PBTechLogo} alt="PB logo" />
           </div>
           <div className="flex items-center w-full">
-            <div className="w-full mr-20 hidden lg:flex">
+            <div className="w-full mr-20 hidden lg:flex rounded-sm overflow-hidden">
               <input
                 type="text"
                 className="block w-full px-4 py-2 text-purple-700 bg-white border focus:outline-none"
@@ -83,19 +83,19 @@ function Navbar() {
                     icon={faUser}
                     className="items-center mr-1 text-sky-500 size-2 fa-xl"
                   />
-                  Sign-In
+                  <a className="cursor-pointer">Sign-In</a>
                   <span className="text-sky-600 m-1"> or </span>
-                  Create Account
+                  <a className="cursor-pointer">Create Account</a>
                 </div>
               </div>
-              <div className="whitespace-nowrap flex justify-center items-center bg-sky-900 rounded-sm m-1 p-2">
+              <div className=" cursor-pointer whitespace-nowrap flex justify-center items-center bg-sky-900 rounded-sm m-1 p-2">
                 Wish List
                 <FontAwesomeIcon
                   icon={faHeart}
                   className="items-center mr-1 text-sky-500 size-2 fa-xl m-2"
                 />
               </div>
-              <div className="flex justify-center items-center bg-sky-900 rounded-sm m-1 p-4">
+              <div className="cursor-pointer flex justify-center items-center bg-sky-900 rounded-sm m-1 p-4">
                 <FontAwesomeIcon
                   icon={faCartShopping}
                   className="items-center mr-1 text-sky-500 size-2 fa-xl mr-4"
@@ -111,7 +111,7 @@ function Navbar() {
           <div className="w-44 h-full lg:flex hidden  justify-evenly p-2">
             <div className="cursor-pointer mx-auto leading-4">
               <svg
-                className="h-full fill-gray-100 p-1"
+                className="h-full fill-gray-100 p-1 hover:fill-amber-600"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -122,7 +122,7 @@ function Navbar() {
           </div>
 
           <ul className="justify-start md:flex hidden lg:pr-32 pr-0 whitespace-nowrap">
-            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+            <li className="cursor-pointer hover:bg-sky-700 mx-auto py-2 px-4 leading-4">
               <div className="dropdown inline-block relative">
                 <button className="inline-flex items-center">
                   <span className="mr-1">Brands</span>
@@ -137,7 +137,7 @@ function Navbar() {
                 <ul className="dropdown-menu text-left absolute hidden text-gray-100 pt-1">
                   <li className="">
                     <a
-                      className="rounded-t bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      className="rounded-t bg-sky-900 hover:hover:bg-sky-700 py-2 px-4 block whitespace-no-wrap"
                       href="#"
                     >
                       Acer
@@ -145,7 +145,7 @@ function Navbar() {
                   </li>
                   <li className="">
                     <a
-                      className="bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      className="bg-sky-900 hover:bg-sky-700 py-2 px-4 block whitespace-no-wrap"
                       href="#"
                     >
                       Apple
@@ -153,7 +153,7 @@ function Navbar() {
                   </li>
                   <li className="">
                     <a
-                      className="rounded-b bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      className="rounded-b bg-sky-900 hover:bg-sky-700 py-2 px-4 block whitespace-no-wrap"
                       href="#"
                     >
                       Microsoft
@@ -162,7 +162,7 @@ function Navbar() {
                 </ul>
               </div>
             </li>
-            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+            <li className="cursor-pointer hover:bg-sky-700 mx-auto py-2 px-4 leading-4">
               <div className="dropdown inline-block relative">
                 <button className="inline-flex items-center">
                   <span className="mr-1">Services</span>
@@ -177,7 +177,7 @@ function Navbar() {
                 <ul className="dropdown-menu text-left absolute hidden text-gray-100 pt-1">
                   <li className="">
                     <a
-                      className="rounded-t bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      className="rounded-t bg-sky-900 hover:bg-sky-700 py-2 px-4 block whitespace-no-wrap"
                       href="#"
                     >
                       Repair
@@ -185,7 +185,7 @@ function Navbar() {
                   </li>
                   <li className="">
                     <a
-                      className="bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      className="bg-sky-900 hover:bg-sky-700 py-2 px-4 block whitespace-no-wrap"
                       href="#"
                     >
                       Finance
@@ -193,7 +193,7 @@ function Navbar() {
                   </li>
                   <li className="">
                     <a
-                      className="rounded-b bg-sky-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                      className="rounded-b bg-sky-900 hover:bg-sky-700 py-2 px-4 block whitespace-no-wrap"
                       href="#"
                     >
                       Custom Builds
@@ -202,25 +202,27 @@ function Navbar() {
                 </ul>
               </div>
             </li>
-            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+            <li className="cursor-pointer hover:bg-sky-700 mx-auto py-2 px-4 leading-4">
               Promotions
             </li>
-            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+            <li className="cursor-pointer hover:bg-sky-700 mx-auto py-2 px-4 leading-4">
               Hot Deals
             </li>
-            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+            <li className="cursor-pointer hover:bg-sky-700 mx-auto py-2 px-4 leading-4">
               New Arrivals
             </li>
-            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">
+            <li className="cursor-pointer hover:bg-sky-700 mx-auto py-2 px-4 leading-4">
               Tax Free Shopping
             </li>
-            <li className="cursor-pointer mx-auto py-2 px-4 leading-4">BYOD</li>
+            <li className="cursor-pointer hover:bg-sky-700 mx-auto py-2 px-4 leading-4">
+              BYOD
+            </li>
           </ul>
           <ul className="xl:flex hidden whitespace-nowrap text-xs">
-            <li className="p-2">Returns</li>
-            <li className="p-2">Help & Support</li>
+            <li className="p-2 cursor-pointer">Returns</li>
+            <li className="p-2 cursor-pointer">Help & Support</li>
 
-            <li className="p-2">
+            <li className="p-2 cursor-pointer">
               <FontAwesomeIcon icon={faStore} className="items-center mr-1" />
               {}Stores
             </li>
