@@ -1,11 +1,14 @@
+import {Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Results from "./pages/results/Results";
+
 function App() {
   return (
-    <div className="flex justify-center w-screen h-screen bg-red-300">
-      <h1 className="text-center bg-blue-300 m-2 p-2 rounded-full h-12 font-sans text-2xl font-bold">
-        Hi!
-      </h1>
-    </div>
-  );
+    <>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/results" element={<Results />} />
+    </Routes>
+  </>)
 }
-
 export default App;
