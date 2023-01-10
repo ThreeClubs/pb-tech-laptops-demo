@@ -18,70 +18,168 @@ function Footer() {
     <footer className="">
       {/* Main Footer */}
       <div className="text-xs text-gray-200 flex px-20 justify-between bg-neutral-700">
-        <div className="flex">
-          <div>
+        <div className="flex leading-8">
+          <div className="whitespace-nowrap">
             <h2 className="font-bold text-stone-400">Shop by DEPARTMENT</h2>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
           </div>
-          <div>
+          <div className="whitespace-nowrap">
             <div className="text-neutral-700">EMPTY</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
-            <div>Placeholder</div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
+              />
+              Placeholder
+            </div>
           </div>
         </div>
-        <div>
+        <div className="leading-6">
           <h2 className="font-bold text-stone-400">Company Info</h2>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
+          <div className="flex whitespace-nowrap items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" className="fill-amber-600 h-4 mr-2">
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Placeholder
+          </div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
         </div>
-        <div>
+        <div className="leading-6">
           <h2 className="font-bold text-stone-400">Services & Support</h2>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
         </div>
-        <div>
+        <div className="leading-6">
           <h2 className="font-bold text-stone-400">Promotions & Offers</h2>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="whitespace-nowrap">Placeholder</div>
         </div>
         <div>
-          <h2 className="font-bold text-stone-400"> Become a PB Insider</h2>
+          <h2 className="font-bold text-stone-400 leading-6">
+            {" "}
+            Become a PB Insider
+          </h2>
         </div>
       </div>
       <div className="flex p-2 bg-neutral-700 justify-center lg:justify-evenly border-t-4 border-stone-500">
@@ -113,7 +211,11 @@ function Footer() {
               className="mx-1 filter invert opacity-25 h-5"
               src={Apple}
             ></img>
-            <img className="filter invert opacity-25 h-5" src={Android}></img>
+            <img
+              className="filter invert opacity-25 h-5"
+              alt="android logo"
+              src={Android}
+            ></img>
           </span>
         </div>
       </div>
