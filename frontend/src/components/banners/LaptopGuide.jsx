@@ -1,6 +1,6 @@
 function LaptopGuide() {
   return (
-    <div className="my-4">
+    <div className="mt-4 mb-12">
       <img
         className="mx-auto hidden sm:flex"
         src="/images/laptop-guide_banner.png"
