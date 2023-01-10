@@ -17,25 +17,74 @@ function Footer() {
   return (
     <footer className="">
       {/* Main Footer */}
-      <div>
-        <div>
-          <h2></h2>
+      <div className="text-xs text-gray-200 flex px-20 justify-between bg-neutral-700">
+        <div className="flex">
+          <div>
+            <h2 className="font-bold text-stone-400">Shop by DEPARTMENT</h2>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+          </div>
+          <div>
+            <div className="text-neutral-700">EMPTY</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+            <div>Placeholder</div>
+          </div>
         </div>
         <div>
-          <h2></h2>
+          <h2 className="font-bold text-stone-400">Company Info</h2>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
         </div>
         <div>
-          <h2></h2>
+          <h2 className="font-bold text-stone-400">Services & Support</h2>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
         </div>
         <div>
-          <h2></h2>
+          <h2 className="font-bold text-stone-400">Promotions & Offers</h2>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
+          <div>Placeholder</div>
         </div>
         <div>
-          <h2></h2>
+          <h2 className="font-bold text-stone-400"> Become a PB Insider</h2>
         </div>
       </div>
-
-      <div className="flex bg-neutral-700 justify-center lg:justify-evenly">
+      <div className="flex p-2 bg-neutral-700 justify-center lg:justify-evenly border-t-4 border-stone-500">
         <div className="hidden lg:flex justify-center items-center m-2">
           <img className="h-5 w-10" src={Visa} alt="piclnk"></img>
           <img className="h-5 w-10" src={Mastercard} alt="piclnk"></img>
@@ -47,7 +96,7 @@ function Footer() {
           <img className="h-5 w-10" src={ApplePay} alt="piclnk"></img>
           <img className="h-5 w-10" src={POLI} alt="piclnk"></img>
         </div>
-        <div className="p-1 m-2">
+        <div className="px-2 py-0.5 rounded-sm m-2 bg-stone-600">
           <span className="text-sm text-neutral-200">
             <FontAwesomeIcon
               icon={faGlobe}
@@ -70,7 +119,7 @@ function Footer() {
       </div>
 
       {/* Postramble */}
-      <div className="bg-stone-600 text-neutral-400 px-20">
+      <div className="bg-stone-600 text-neutral-400 px-20 border-t-4 border-neutral-500">
         <h2 className="text-center font-bold text-xs p-1">
           Copyright © PB Technologies Ltd All rights reserved. 587 Great South
           Road, Manukau, Auckland, New Zealand
