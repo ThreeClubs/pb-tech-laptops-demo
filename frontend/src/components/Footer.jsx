@@ -1,6 +1,23 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGlobe,
+  faComputer,
+  faHardDrive,
+  faPrint,
+  faTv,
+  faGamepad,
+  faPlus,
+  faKey,
+  faAppleWhole,
+  faKeyboard,
+  faWifi,
+  faMobileScreen,
+  faHeadphones,
+  faCamera,
+  faRobot,
+  faGift,
+} from "@fortawesome/free-solid-svg-icons";
 import Apple from "../assets/img/apple_logo.png";
 import Android from "../assets/img/android_logo.png";
 import Visa from "../assets/img/img_visajpg.png";
@@ -17,172 +34,437 @@ function Footer() {
   return (
     <footer className="">
       {/* Main Footer */}
-      <div className="text-xs text-gray-200 flex px-20 justify-between bg-neutral-700">
-        <div className="flex leading-8">
+      <div className="text-xs text-gray-200 flex px-10 py-4 w-full bg-neutral-800">
+        <div className="flex leading-8 lg:w-1/3 w-full justify-evenly">
           <div className="whitespace-nowrap">
             <h2 className="font-bold text-stone-400">Shop by DEPARTMENT</h2>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faComputer}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Computers & Tablets
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faHardDrive}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              PC Parts
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faPrint}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Printing & Office
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faTv}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              TV & AV
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faGamepad}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Gaming
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faKey}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Smart Home & Security
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faPlus}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              More
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faAppleWhole}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Apple
             </div>
           </div>
           <div className="whitespace-nowrap">
-            <div className="text-neutral-700">EMPTY</div>
-            <div>
+            <div className="invisible">EMPTY</div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faKeyboard}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              PC Peripherals & Accessories
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faWifi}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Networking
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faMobileScreen}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Phones & Accessories
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faHeadphones}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Headphones & Audio
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faCamera}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Cameras & Drones
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faRobot}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Toys, Hobbies & STEM
             </div>
-            <div>
+            <div className="cursor-pointer">
               <FontAwesomeIcon
-                icon={faGlobe}
+                icon={faGift}
                 className="whitespace-nowrap items-center mr-1 text-amber-600 size-2 fa-lg"
               />
-              Placeholder
+              Gift Ideas
             </div>
           </div>
         </div>
-        <div className="leading-6">
+        <div className="leading-6 w-1/6 hidden lg:block">
           <h2 className="font-bold text-stone-400">Company Info</h2>
-          <div className="flex whitespace-nowrap items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" className="fill-amber-600 h-4 mr-2">
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
               <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
             </svg>
-            Placeholder
+            About Us
           </div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Business
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Education
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Wholesale
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Government
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Health
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Stores
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Careers
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Contact Us
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            News
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Terms & Conditions
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Privacy Policy
+          </div>
         </div>
-        <div className="leading-6">
+        <div className="leading-6 w-1/6 hidden lg:block">
           <h2 className="font-bold text-stone-400">Services & Support</h2>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Help
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Returns & Warranty
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Finance
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            IT Services
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Home Services
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Repair Services
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Job Tracker
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Service Parts
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            System Builder
+          </div>
         </div>
-        <div className="leading-6">
+        <div className="leading-6 w-1/6 hidden lg:block">
           <h2 className="font-bold text-stone-400">Promotions & Offers</h2>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
-          <div className="whitespace-nowrap">Placeholder</div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Promotions
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Clearance
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Hot Deals
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            New Arrivals
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            BYOD
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Tax Free Shopping
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            Events
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            PB Insider
+          </div>
+          <div className="flex whitespace-nowrap items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+              className="fill-amber-600 h-4 mr-2"
+            >
+              <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+            PB Advisor
+          </div>
         </div>
-        <div>
+        <div className="w-1/6 hidden lg:block">
           <h2 className="font-bold text-stone-400 leading-6">
             {" "}
             Become a PB Insider
           </h2>
         </div>
       </div>
-      <div className="flex p-2 bg-neutral-700 justify-center lg:justify-evenly border-t-4 border-stone-500">
+      <div className="flex p-2 bg-neutral-800 justify-center lg:justify-evenly border-t border-stone-700">
         <div className="hidden lg:flex justify-center items-center m-2">
           <img className="h-5 w-10" src={Visa} alt="piclnk"></img>
           <img className="h-5 w-10" src={Mastercard} alt="piclnk"></img>
@@ -194,14 +476,14 @@ function Footer() {
           <img className="h-5 w-10" src={ApplePay} alt="piclnk"></img>
           <img className="h-5 w-10" src={POLI} alt="piclnk"></img>
         </div>
-        <div className="px-2 py-0.5 rounded-sm m-2 bg-stone-600">
+        <div className="px-2 py-0.5 rounded-sm m-2 bg-stone-700">
           <span className="text-sm text-neutral-200">
             <FontAwesomeIcon
               icon={faGlobe}
               className="items-center mr-1 text-neutral-400 size-2 fa-lg"
             />
-            Country: New Zealand &#x2022; Australia &#x2022; Pacific &#x2022;
-            Global
+            Country: <span className="text-amber-600">New Zealand</span>{" "}
+            &#x2022; Australia &#x2022; Pacific &#x2022; Global
           </span>
         </div>
         <div className="m-2 flex items-center">
@@ -221,7 +503,7 @@ function Footer() {
       </div>
 
       {/* Postramble */}
-      <div className="bg-stone-600 text-neutral-400 px-20 border-t-4 border-neutral-500">
+      <div className="bg-stone-700 text-neutral-400 px-20 border-t border-neutral-600">
         <h2 className="text-center font-bold text-xs p-1">
           Copyright © PB Technologies Ltd All rights reserved. 587 Great South
           Road, Manukau, Auckland, New Zealand
