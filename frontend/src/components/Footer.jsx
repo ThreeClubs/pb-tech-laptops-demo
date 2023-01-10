@@ -17,10 +17,26 @@ function Footer() {
   return (
     <footer className="">
       {/* Main Footer */}
-      <div id="column-wrapper"></div>
+      <div>
+        <div>
+          <h2></h2>
+        </div>
+        <div>
+          <h2></h2>
+        </div>
+        <div>
+          <h2></h2>
+        </div>
+        <div>
+          <h2></h2>
+        </div>
+        <div>
+          <h2></h2>
+        </div>
+      </div>
 
-      <div id="mini-links-wrapper" className="flex bg-stone-800">
-        <div className="flex">
+      <div className="flex bg-neutral-700 justify-center lg:justify-evenly">
+        <div className="hidden lg:flex justify-center items-center m-2">
           <img className="h-5 w-10" src={Visa} alt="piclnk"></img>
           <img className="h-5 w-10" src={Mastercard} alt="piclnk"></img>
           <img className="h-5 w-10" src={AMEX} alt="piclnk"></img>
@@ -31,8 +47,8 @@ function Footer() {
           <img className="h-5 w-10" src={ApplePay} alt="piclnk"></img>
           <img className="h-5 w-10" src={POLI} alt="piclnk"></img>
         </div>
-        <div className="p-1">
-          <span className="text-sm text-neutral-400">
+        <div className="p-1 m-2">
+          <span className="text-sm text-neutral-200">
             <FontAwesomeIcon
               icon={faGlobe}
               className="items-center mr-1 text-neutral-400 size-2 fa-lg"
@@ -41,17 +57,14 @@ function Footer() {
             Global
           </span>
         </div>
-        <div className="">
-          <span className="text-sm text-neutral-500 h-5 flex">
+        <div className="m-2 flex items-center">
+          <span className="text-sm text-neutral-500 h-5 hidden lg:flex">
             Download our app:
             <img
-              className="items-center mx-1 filter invert opacity-25 h-5"
+              className="mx-1 filter invert opacity-25 h-5"
               src={Apple}
             ></img>
-            <img
-              className="items-center filter invert opacity-25 h-5"
-              src={Android}
-            ></img>
+            <img className="filter invert opacity-25 h-5" src={Android}></img>
           </span>
         </div>
       </div>
