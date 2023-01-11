@@ -105,6 +105,29 @@ function Navbar() {
             </div>
           </div>
         </div>
+        <div className="pt-6 w-full mr-20 lg:hidden flex rounded-sm overflow-hidden">
+          <input
+            type="text"
+            className="block w-full px-4 py-2 text-purple-700 bg-white border focus:outline-none"
+            placeholder="Search..."
+          />
+          <button className="px-4 text-white bg-amber-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
         {/* Bottom Nav */}
 
         <nav className="mt-5 w-full h-11 text-center text-gray-100 text-sm flex justify-between items-center">
@@ -230,11 +253,11 @@ function Navbar() {
         </nav>
       </div>
       <div className="px-20 py-4 bg-gray-200">
-        <p className="text-md text-sky-700">
+        <p className="text-sm text-sky-700">
           Home &gt; Computers & Laptops &gt;{" "}
           <span className="text-gray-500">Laptops</span>
         </p>
-        <h1 className="text-4xl font-medium text-sky-800">Laptops</h1>
+        <h1 className="text-3xl font-medium text-sky-800">Laptops</h1>
       </div>
     </header>
   );
