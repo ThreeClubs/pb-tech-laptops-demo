@@ -252,6 +252,7 @@ function Navbar() {
           </ul>
         </nav>
       </div>
+      {/* Route path display */}
       <div className="px-20 py-4 bg-gray-200">
         <p className="text-sm text-sky-700">
           Home &gt; Computers & Laptops &gt;{" "}
