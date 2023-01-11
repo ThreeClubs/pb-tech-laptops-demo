@@ -1,6 +1,6 @@
 function Articles() {
   return (
-    <div className="justify-center mt-8 flex flex-col sm:flex-rowr">
+    <div className="justify-center mt-8 flex flex-col">
       <img
         className="mx-auto hidden sm:flex"
         src="/images/check-out_articles.png"

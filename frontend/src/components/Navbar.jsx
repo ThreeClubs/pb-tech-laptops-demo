@@ -229,6 +229,13 @@ function Navbar() {
           </ul>
         </nav>
       </div>
+      <div className="px-20 py-4 bg-gray-200">
+        <p className="text-md text-sky-700">
+          Home &gt; Computers & Laptops &gt;{" "}
+          <span className="text-gray-500">Laptops</span>
+        </p>
+        <h1 className="text-4xl font-medium text-sky-800">Laptops</h1>
+      </div>
     </header>
   );
 }
