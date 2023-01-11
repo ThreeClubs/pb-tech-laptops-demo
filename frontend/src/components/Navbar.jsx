@@ -9,16 +9,20 @@ function Navbar() {
   return (
     <header className="font-body">
       {/* Top Nav Bar */}
-      <nav className="text-center text-white text-xs h-9 w-full md:bg-gray-900 bg-sky-800 py-0 px-20">
-        <div className="h-full w-8 cursor-pointer flex m-auto md:hidden">
+      <nav className="text-center text-white text-xs md:h-9 h-12 w-full flex justify-between md:block md:bg-gray-900 bg-sky-800 md:py-0 md:px-20 p-2">
+        <div className="md:hidden h-full flex items-center">
+          <img className="h-full" src={PBTechLogo} alt="PB logo" />
+        </div>
+        <div className="h-full w-8 md:hidden cursor-pointer">
           <svg
-            className="h-full fill-gray-200 hover:fill-amber-600"
+            className="h-full fill-gray-100 hover:fill-amber-600"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </div>
+
         <ul className="md:flex justify-between hidden lg:pr-32 pr-0 max-w-7xl whitespace-nowrap">
           <li className="mx-auto leading-9 w-full hover:bg-gray-700">
             <a href="#">PB Tech</a>

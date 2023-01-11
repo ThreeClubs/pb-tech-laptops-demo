@@ -29,6 +29,9 @@ import Laybuy from "../assets/img/img_laybuyjpg.png";
 import Klarna from "../assets/img/img_klarnajpg.png";
 import ApplePay from "../assets/img/img_applepayjpg.png";
 import POLI from "../assets/img/img_polijpg.png";
+import PBInsider from "../assets/img/pb-inside_banner.png";
+import Social from "../assets/img/Social.png";
+import Feedback from "../assets/img/feeback_button.png";
 
 function Footer() {
   return (
@@ -462,6 +465,13 @@ function Footer() {
             {" "}
             Become a PB Insider
           </h2>
+          <div className="flex flex-col items-end">
+            <img className="pb-2 w-full" src={PBInsider} alt="pb insider" />
+            <img className="w-3/4 pb-2" src={Social} alt="" />
+            <button className="bg-gray-100 rounded-md p-1 w-20">
+              <img src={Feedback} alt="" />
+            </button>
+          </div>
         </div>
       </div>
       <div className="flex p-2 bg-neutral-800 justify-center lg:justify-evenly border-t border-stone-700">
