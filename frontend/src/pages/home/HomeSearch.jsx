@@ -14,9 +14,9 @@ function HomeSearch() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="text-gray-900 max-w-6xl xl:w-full lg:min-w-6xl bg-amber-600 lg:pl-10 lg:p-8 p-6 my-4 mx-auto rounded-3xl items-center overflow-hidden">
-      <div className="flex lg:flex-row items-center flex-col border lg:items-start">
-        <div className="lg:w-1/2 p-2 lg:pr-0 sm:pr-40 flex flex-col lg:text-right lg:mb-20 m-0 border">
+    <div className="text-gray-900 max-w-6xl xl:w-full lg:min-w-6xl bg-amber-600 py-6 my-4 mx-auto rounded-3xl items-center overflow-hidden">
+      <div className="flex lg:flex-row items-center flex-col lg:items-start">
+        <div className=" relative -top-2 lg:w-1/2 p-2 lg:pr-0 sm:pr-40 flex flex-col lg:text-right lg:mb-20 m-0">
           <p className="text-2xl whitespace-nowrap font-medium lg:-mr-2 mr-0">
             I'm looking to use a
           </p>
@@ -25,13 +25,13 @@ function HomeSearch() {
           </h1>
           {!isActive && (
             <img
-              className="xl:w-full lg:w-96 lg:relative xl:top-0 lg:top-28 lg:block lg: hidden lg:-mb-32 border-2 border-red-500"
+              className="xl:w-full lg:w-96 lg:relative xl:top-0 lg:top-32 lg:block lg: hidden lg:-mb-32"
               src={Installing}
               alt="computer artwork"
             ></img>
           )}
         </div>
-        <div className="lg:w-1/2 w-full lg:p-4 p-0 lg:pl-0 flex items-center border">
+        <div className="lg:w-1/2 w-full lg:p-4 p-0 lg:pl-0 flex items-center">
           <ul className="w-full md:text-4xl text-3xl">
             <li
               onClick={() => setIsActive(!isActive)}
