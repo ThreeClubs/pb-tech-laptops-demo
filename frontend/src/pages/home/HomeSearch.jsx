@@ -14,9 +14,9 @@ function HomeSearch() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="text-gray-900 max-w-6xl xl:w-full lg:min-w-6xl bg-amber-600 py-6 my-4 mx-auto rounded-3xl items-center overflow-hidden">
+    <div className="text-gray-900 max-w-5xl xl:w-full bg-amber-600 py-6 my-4 rounded-3xl items-center overflow-hidden">
       <div className="flex lg:flex-row items-center flex-col lg:items-start">
-        <div className=" relative -top-2 lg:w-1/2 p-2 lg:pr-0 sm:pr-40 flex flex-col lg:text-right lg:mb-20 m-0">
+        <div className="relative -top-2 lg:w-1/2 p-4 lg:pr-0 sm:pr-40 flex flex-col lg:text-right lg:mb-20">
           <p className="text-2xl whitespace-nowrap font-medium lg:-mr-2 mr-0">
             I'm looking to use a
           </p>
@@ -32,10 +32,10 @@ function HomeSearch() {
           )}
         </div>
         <div className="lg:w-1/2 w-full lg:p-4 p-0 lg:pl-0 flex items-center">
-          <ul className="w-full md:text-4xl text-3xl">
+          <ul className="w-full md:text-4xl text-3xl sm:mx-4 md:mx-6 xl:mr-12 xl:ml-2">
             <li
               onClick={() => setIsActive(!isActive)}
-              className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex justify-between"
+              className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between"
             >
               my business
               <FontAwesomeIcon
@@ -44,7 +44,7 @@ function HomeSearch() {
               />
             </li>
             {!isActive && (
-              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex justify-between">
+              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between">
                 gaming
                 <FontAwesomeIcon
                   icon={faGamepad}
@@ -53,7 +53,7 @@ function HomeSearch() {
               </li>
             )}
             {!isActive && (
-              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex justify-between">
+              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between">
                 graphic/motion
                 <FontAwesomeIcon
                   icon={faVideoCamera}
@@ -62,7 +62,7 @@ function HomeSearch() {
               </li>
             )}
             {!isActive && (
-              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex justify-between">
+              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between">
                 home/studio
                 <FontAwesomeIcon
                   icon={faHouse}
@@ -71,7 +71,7 @@ function HomeSearch() {
               </li>
             )}
             {!isActive && (
-              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex justify-between">
+              <li className="whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between">
                 workstation
                 <FontAwesomeIcon
                   icon={faFile}

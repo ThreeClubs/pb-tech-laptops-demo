@@ -40,13 +40,12 @@ function BusinessFilter() {
   };
 
   return (
-    <div className="bg-amber-600 brightness-95 flex justify-center">
-      <div className="lg:mx-20 mx-10 mx-5 border-2 border-red-600">
-        <div className="">
+    <div className="bg-amber-600 brightness-95 mx-4 sm:mx-0 flex border-2 border-blue-500">
+      <div className="border-2 border-red-600 mx-auto sm:w-5/6">
+        <div className="flex lg:flex-row flex-col items-center">
           <span>Company Expertise</span>
           <Select
             defaultValue="Select your field of expertise"
-            style={{ width: 220 }}
             onChange={handleDropdownChange}
           >
             <Option value="option1">Option 1</Option>
