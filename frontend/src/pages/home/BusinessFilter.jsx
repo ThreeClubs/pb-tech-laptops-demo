@@ -11,7 +11,6 @@ function BusinessFilter() {
     checkbox1: false,
     checkbox2: false,
     checkbox3: false,
-    checkbox4: false,
     checkbox5: false,
     checkbox6: false,
     checkbox7: false,
@@ -43,7 +42,9 @@ function BusinessFilter() {
     <div className="bg-amber-600 brightness-95 mx-4 sm:mx-0 flex border-2 border-blue-500">
       <div className="border-2 border-red-600 mx-auto sm:w-5/6">
         <div className="flex lg:flex-row flex-col items-center">
-          <span>Company Expertise</span>
+          <span className="text-white text-md font-medium p-1">
+            Company Expertise
+          </span>
           <Select
             defaultValue="Select your field of expertise"
             onChange={handleDropdownChange}
@@ -54,17 +55,22 @@ function BusinessFilter() {
           </Select>
         </div>
         <div className="py-4 border">
-          <div className="flex justify-evenly p-2 border">
-            <div className="border w-1/4">
-              <div className="flex">
-                <div className="text-right">
-                  <h1 className="text-white text-md font-medium">Quantity</h1>
+          <div className="flex justify-center lg:justify-start">
+            <div className="border w-1/4 text-right">
+              <h1 className="text-white text-md font-medium">Quantity</h1>
+            </div>
+          </div>
+
+          <div className="flex flex-col-reverse lg:flex-row lg:items-end items-center justify-evenly p-2 border">
+            <div className="border lg:w-1/4 flex lg:flex-col">
+              <div className="flex px-2">
+                <div className="text-center lg:text-right">
                   <p className="text-xs text-black font-medium">
                     Display results <br /> on stock availability
                   </p>
                 </div>
               </div>
-              <div className="w- border flex justify-evenly items-center">
+              <div className="border flex justify-evenly items-center px-2">
                 {!isActive && <span className="">Off</span>}
                 <Switch
                   onChange={handleToggleChange}
@@ -75,7 +81,7 @@ function BusinessFilter() {
               </div>
             </div>
 
-            <div className="border w-1/2 flex p-2 items-end">
+            <div className="border w-full lg:w-1/2 flex p-2 items-end">
               <div className="w-full">
                 <Slider
                   min={1}
@@ -85,7 +91,9 @@ function BusinessFilter() {
                 />
               </div>
             </div>
-            <span className="border w-1/4">15 Items or more?</span>
+            <span className="hidden lg:block border lg:w-1/4">
+              15 Items or more?
+            </span>
           </div>
         </div>
         <div>
@@ -107,12 +115,6 @@ function BusinessFilter() {
               type="checkbox"
               name="checkbox3"
               checked={checkboxValues.checkbox3}
-              onChange={handleCheckboxChange}
-            />
-            <input
-              type="checkbox"
-              name="checkbox4"
-              checked={checkboxValues.checkbox4}
               onChange={handleCheckboxChange}
             />
           </div>
