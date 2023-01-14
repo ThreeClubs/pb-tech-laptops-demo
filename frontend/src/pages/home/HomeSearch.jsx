@@ -37,16 +37,12 @@ function HomeSearch() {
           <ul className="w-full md:text-4xl text-3xl sm:mx-4 md:mx-6 xl:mr-12 xl:ml-2">
             <li
               onClick={() => setIsActive(!isActive)}
-              onMouseOver={() => setArrowIsActive(true)}
-              onMouseOut={() => setArrowIsActive(false)}
-              className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between"
+              className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 mx-4 py-6 px-0 border-gray-900 flex items-center justify-between hover:justify-evenly"
             >
-              {arrowIsActive && (
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="whitespace-nowrap lg:p-3 p-1 items-center group-hover:text-white text-gray-900 size-2 fa-md"
-                />
-              )}
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="whitespace-nowrap lg:p-3 p-1 hidden items-center group-hover:inline group-hover:text-white text-gray-900 size-2 fa-md"
+              />
               my business
               <FontAwesomeIcon
                 icon={faBriefcase}
@@ -54,7 +50,11 @@ function HomeSearch() {
               />
             </li>
             {!isActive && (
-              <li className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between">
+              <li className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 mx-4 py-6 px-0 border-gray-900 flex items-center justify-between hover:justify-evenly">
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="whitespace-nowrap lg:p-3 p-1 hidden items-center group-hover:inline group-hover:text-white text-gray-900 size-2 fa-md"
+                />
                 gaming
                 <FontAwesomeIcon
                   icon={faGamepad}
@@ -63,7 +63,11 @@ function HomeSearch() {
               </li>
             )}
             {!isActive && (
-              <li className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between">
+              <li className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 mx-4 py-6 px-0 border-gray-900 flex items-center justify-between hover:justify-evenly">
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="whitespace-nowrap lg:p-3 p-1 hidden items-center group-hover:inline group-hover:text-white text-gray-900 size-2 fa-md"
+                />
                 graphic/motion
                 <FontAwesomeIcon
                   icon={faVideoCamera}
@@ -72,11 +76,11 @@ function HomeSearch() {
               </li>
             )}
             {!isActive && (
-              <li
-                onMouseOver={() => setArrowIsActive(true)}
-                onMouseOut={() => setArrowIsActive(false)}
-                className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between"
-              >
+              <li className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 mx-4 py-6 px-0 border-gray-900 flex items-center justify-between hover:justify-evenly">
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="whitespace-nowrap lg:p-3 p-1 hidden items-center group-hover:inline group-hover:text-white text-gray-900 size-2 fa-md"
+                />
                 home/studio
                 <FontAwesomeIcon
                   icon={faHouse}
@@ -85,7 +89,11 @@ function HomeSearch() {
               </li>
             )}
             {!isActive && (
-              <li className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 m-6 border-gray-900 flex items-center justify-between">
+              <li className="hover:bg-black hover:text-white rounded-sm group whitespace-nowrap font-light lg:border-b-4 lg:pb-0 pb-2 border-b-2 mx-4 py-6 px-0 border-gray-900 flex items-center justify-between hover:justify-evenly">
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="whitespace-nowrap lg:p-3 p-1 hidden items-center group-hover:inline group-hover:text-white text-gray-900 size-2 fa-md"
+                />
                 workstation
                 <FontAwesomeIcon
                   icon={faFile}
