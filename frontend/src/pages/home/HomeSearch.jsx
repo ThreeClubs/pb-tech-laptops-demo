@@ -19,9 +19,9 @@ function HomeSearch() {
       <div className="flex lg:flex-row items-center flex-col lg:items-start">
         <div className="relative -top-2 lg:w-1/2 p-4 lg:pr-0 sm:pr-40 flex flex-col lg:text-right lg:mb-20">
           <p className="text-2xl whitespace-nowrap font-medium lg:-mr-2 mr-0">
-            I'm looking to use a
+            I am looking to use a
           </p>
-          <h1 className="lg:-mb-16 lg:mb-20 mb-0 whitespace-nowrap tracking-wide font-medium lg:text-7xl text-6xl">
+          <h1 className="lg:-mb-16 lg:mb-20 mb-0 whitespace-nowrap font-medium lg:text-7xl text-6xl">
             laptop for
           </h1>
           {!isActive && (
