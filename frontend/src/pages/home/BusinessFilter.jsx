@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Switch, Slider, Select } from "antd";
-
-const { Option } = Select;
+import { Switch, Slider } from "antd";
 
 function BusinessFilter() {
   const [isActive, setIsActive] = useState(false);
@@ -16,7 +14,6 @@ function BusinessFilter() {
     checkbox7: false,
     checkbox8: false,
   });
-  const [dropdownValue, setDropdownValue] = useState("");
 
   const handleSliderChange = (value) => {
     setSliderValue(value);
@@ -34,25 +31,13 @@ function BusinessFilter() {
     }));
   };
 
-  const handleDropdownChange = (value) => {
-    setDropdownValue(value);
-  };
-
   return (
-    <div className="bg-amber-600 brightness-95 mx-4 sm:mx-0 flex border-2 border-blue-500">
+    <div className="dark-orange-background mx-4 sm:mx-0 flex border-2 border-blue-500">
       <div className="border-2 border-red-600 mx-auto sm:w-5/6">
         <div className="flex lg:flex-row flex-col items-center">
           <span className="text-white text-md font-medium p-1">
             Company Expertise
           </span>
-          <Select
-            defaultValue="Select your field of expertise"
-            onChange={handleDropdownChange}
-          >
-            <Option value="option1">Option 1</Option>
-            <Option value="option2">Option 2</Option>
-            <Option value="option3">Option 3</Option>
-          </Select>
         </div>
         <div className="py-4 border">
           <div className="flex justify-center lg:justify-start">
@@ -147,17 +132,7 @@ function BusinessFilter() {
           </div>
         </div>
         <span>Add an option</span>
-        <span>
-          <Select
-            defaultValue="Select Features"
-            style={{ width: 150 }}
-            onChange={handleDropdownChange}
-          >
-            <Option value="option4">Option 4</Option>
-            <Option value="option5">Option 5</Option>
-            <Option value="option6">Option 6</Option>
-          </Select>
-        </span>
+        <span></span>
       </div>
     </div>
   );
