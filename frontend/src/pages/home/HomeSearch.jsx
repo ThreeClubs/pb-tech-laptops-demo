@@ -3,6 +3,7 @@ import Installing from "../../assets/img/installing.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
+  faArrowLeft,
   faGamepad,
   faBriefcase,
   faHouse,
@@ -16,6 +17,17 @@ function HomeSearch() {
 
   return (
     <div className="text-gray-900 max-w-5xl lg:w-full orange-background py-6 my-4 rounded-3xl items-center overflow-hidden">
+      {isActive && (
+        <div className="relative w-20 left-5 flex items-center justify-around">
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            onClick={() => setIsActive(false)}
+            className="transform scale-x-150 fa-lg text-white whitespace-nowrap hover:text-black"
+          />
+          <span className="text-white text-xl font-light">back</span>
+        </div>
+      )}
+
       <div className="flex lg:flex-row items-center flex-col lg:items-start">
         <div className="relative -top-2 lg:w-1/2 p-4 lg:pr-0 sm:pr-40 flex flex-col lg:text-right lg:mb-20">
           <p className="text-2xl whitespace-nowrap font-medium lg:-mr-2 mr-0">
@@ -104,6 +116,20 @@ function HomeSearch() {
         </div>
       </div>
       {isActive && <BusinessFilter />}
+      {isActive && (
+        <div className="w-full flex lg:justify-end justify-center items-center">
+          <button
+            type="submit"
+            className="w-full lg:w-64 m-4 px-4 py-1 bg-black text-white text-xl"
+          >
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              className="whitespace-nowrap fa-lg mr-2"
+            ></FontAwesomeIcon>
+            <span> Search</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 }
