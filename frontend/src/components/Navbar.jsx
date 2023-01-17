@@ -112,7 +112,7 @@ function Navbar() {
         <div className="pt-6 w-full mr-20 lg:hidden flex rounded-sm overflow-hidden">
           <input
             type="text"
-            className="block w-full px-4 py-2 text-purple-700 bg-white border focus:outline-none"
+            className="block w-full px-4 py-2 text-gray-700 bg-white border border-white focus:outline-none"
             placeholder="Search..."
           />
           <button className="px-4 text-white bg-amber-600">

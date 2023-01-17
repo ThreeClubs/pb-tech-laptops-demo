@@ -16,7 +16,7 @@ function HomeSearch() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="text-gray-900 max-w-5xl lg:w-full orange-background py-6 my-4 rounded-3xl items-center overflow-hidden">
+    <div className="text-gray-900 min-w-sm max-w-5xl lg:w-full orange-background py-6 my-4 rounded-3xl items-center overflow-hidden">
       {isActive && (
         <div className="relative w-20 left-5 flex items-center justify-around">
           <FontAwesomeIcon
