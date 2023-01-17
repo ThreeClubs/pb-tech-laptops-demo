@@ -25,7 +25,7 @@ function BusinessFilter() {
     },
   });
 
-  const handleChange = (event) => {
+  const handleFieldChange = (event) => {
     setField(event.target.value);
   };
 
@@ -54,16 +54,16 @@ function BusinessFilter() {
   return (
     <div className="w-full dark-orange-background mx-4 sm:mx-0 flex">
       <div className="mx-auto sm:w-5/6">
-        <div className="flex lg:flex-row flex-col items-center border-b border-black">
-          <span className="text-white text-md font-medium p-1 lg:w-1/4">
+        <div className="flex lg:flex-row  flex-col items-center border-b border-black">
+          <span className="text-white lg:text-right lg:mr-12 text-md  font-medium p-1 lg:w-1/4">
             Company Expertise
           </span>
           <div className="flex justify-center items-center w-2/3">
-            <div className="px-4 w-full">
+            <div className="px-4 w-full border-b border-black">
               <FormControl fullWidth>
                 <Select
                   value={field}
-                  onChange={handleChange}
+                  onChange={handleFieldChange}
                   displayEmpty
                   inputProps={{ "aria-label": "Without label" }}
                 >
@@ -98,11 +98,13 @@ function BusinessFilter() {
         </div>
 
         <div className="py-4 border-b border-black">
-          <div className="flex justify-center lg:justify-start">
-            <h1 className="text-white text-md font-medium">Quantity</h1>
+          <div className="lg:w-52 flex justify-center lg:justify-start">
+            <h1 className="text-white lg:text-right text-center w-full text-md font-medium">
+              Quantity
+            </h1>
           </div>
           <div className="flex flex-col-reverse lg:flex-row lg:items-end items-center justify-evenly p-2">
-            <div className="lg:w-1/4 flex lg:flex-col">
+            <div className="lg:w-1/4 flex lg:flex-col lg:items-end lg:mr-12">
               <div className="flex px-2">
                 <div className="text-center lg:text-right">
                   <p className="text-xs text-black font-medium">
@@ -150,9 +152,11 @@ function BusinessFilter() {
           </div>
         </div>
 
-        <div className="border-b border-black flex justify-center items-center flex-col lg:flex-row fill-white">
-          <div className="text-white font-medium lg:w-1/4 text-center">OS</div>
-          <div className="w-full flex flex-col lg:flex-row lg:justify-evenly items-center p-4">
+        <div className="border-b border-black flex justify-center items-center flex-col lg:flex-row fill-white py-6">
+          <div className="text-white font-medium lg:w-1/4 lg:text-right lg:mr-12">
+            OS
+          </div>
+          <div className="w-full flex flex-col lg:flex-row lg:w-3/4 lg:justify-evenly items-center p-4">
             <div className="flex items-center w-full text-white text-xl ml-12 lg:ml-0 hover:text-black hover:fill-black hover:opacity-75">
               <input
                 type="checkbox"
@@ -201,8 +205,10 @@ function BusinessFilter() {
           </div>
         </div>
 
-        <div className="border-b border-black flex flex-col lg:flex-row justify-center items-center py-8">
-          <div className="lg:w-1/4 text-white font-medium">Screen Size</div>
+        <div className="border-b border-black flex flex-col lg:flex-row justify-center items-center py-6">
+          <div className="  lg:w-1/4 text-white font-medium lg:mr-12 text-right">
+            Screen Size
+          </div>
           <div className="lg:w-3/4 lg:justify-between justify-center items-center lg:flex-row flex flex-wrap">
             <div className="lg:w-1/4 w-1/2 flex flex-col justify-center items-center py-1">
               <div className="text-lg mb-2 font-medium text-white flex items-center justify-center border-2 w-16 h-10 rounded-md">
@@ -269,8 +275,10 @@ function BusinessFilter() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center">
-          <span className="text-white font-medium w-1/4">Add an option</span>
+        <div className=" flex flex-col lg:flex-row items-center py-6">
+          <span className="text-white font-medium lg:w-1/4 text-right lg:mr-12">
+            Add an option
+          </span>
           <div className="flex justify-center items-center w-2/3">
             <div className="px-4 w-full">
               <FormControl fullWidth>
@@ -279,6 +287,7 @@ function BusinessFilter() {
                   onChange={handleFeatureChange}
                   displayEmpty
                   inputProps={{ "aria-label": "Without label" }}
+                  className="border-b-2 border-black"
                 >
                   <MenuItem
                     value=""
