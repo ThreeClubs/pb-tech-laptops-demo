@@ -120,7 +120,7 @@ function HomeSearch() {
         <div className="w-full flex lg:justify-end justify-center items-center">
           <button
             type="submit"
-            className="w-full lg:w-64 m-4 px-4 py-1 bg-black text-white text-xl"
+            className="w-full lg:w-64 m-4 px-4 py-2 bg-black hover:text-black hover:bg-white text-white text-xl"
           >
             <FontAwesomeIcon
               icon={faArrowRight}

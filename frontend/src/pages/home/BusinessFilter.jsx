@@ -54,18 +54,19 @@ function BusinessFilter() {
   return (
     <div className="w-full dark-orange-background mx-4 sm:mx-0 flex">
       <div className="mx-auto sm:w-5/6">
-        <div className="flex lg:flex-row  flex-col items-center border-b border-black">
-          <span className="text-white lg:text-right lg:mr-12 text-md  font-medium p-1 lg:w-1/4">
+        <div className="flex lg:flex-row py-6 flex-col items-center border-b border-black">
+          <span className="text-white lg:text-right lg:mr-12 text-md mb-2 lg:mb-0 font-medium p-1 lg:w-1/4">
             Company Expertise
           </span>
           <div className="flex justify-center items-center w-2/3">
-            <div className="px-4 w-full border-b border-black">
+            <div className="px-4 w-full">
               <FormControl fullWidth>
                 <Select
                   value={field}
                   onChange={handleFieldChange}
                   displayEmpty
                   inputProps={{ "aria-label": "Without label" }}
+                  className="border-b-2 border-black"
                 >
                   <MenuItem
                     value=""
@@ -105,26 +106,26 @@ function BusinessFilter() {
           </div>
           <div className="flex flex-col-reverse lg:flex-row lg:items-end items-center justify-evenly p-2">
             <div className="lg:w-1/4 flex lg:flex-col lg:items-end lg:mr-12">
-              <div className="flex px-2">
+              <div className="flex">
                 <div className="text-center lg:text-right">
                   <p className="text-xs text-black font-medium">
                     Display results <br /> on stock availability
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center items-center px-2">
+              <div className="flex justify-center items-center">
                 <ThemeProvider theme={theme}>
                   <Switch onClick={() => setToggleLabel(!toggleLabel)} />
                 </ThemeProvider>
 
-                {!toggleLabel && <span>Off</span>}
-                {toggleLabel && <span>On</span>}
+                {!toggleLabel && <span className="font-medium">Off</span>}
+                {toggleLabel && <span className="font-medium">On</span>}
               </div>
             </div>
 
             {/* Slider */}
             <div className="w-full lg:w-1/2 flex p-2 items-end">
-              <span className="px-2">1</span>
+              <span className="px-2 mb-1 font-medium">1</span>
               <ThemeProvider theme={theme}>
                 <Slider
                   min={1}
@@ -136,7 +137,7 @@ function BusinessFilter() {
                 />
               </ThemeProvider>
 
-              <span className="px-2">15</span>
+              <span className="px-2 mb-1 font-medium">15</span>
             </div>
 
             <div className="w-full lg:w-1/4 hidden lg:block">
@@ -206,7 +207,7 @@ function BusinessFilter() {
         </div>
 
         <div className="border-b border-black flex flex-col lg:flex-row justify-center items-center py-6">
-          <div className="  lg:w-1/4 text-white font-medium lg:mr-12 text-right">
+          <div className="  lg:w-1/4 text-white font-medium lg:mr-12 text-right mb-2 lg:mb-0">
             Screen Size
           </div>
           <div className="lg:w-3/4 lg:justify-between justify-center items-center lg:flex-row flex flex-wrap">
@@ -276,7 +277,7 @@ function BusinessFilter() {
         </div>
 
         <div className=" flex flex-col lg:flex-row items-center py-6">
-          <span className="text-white font-medium lg:w-1/4 text-right lg:mr-12">
+          <span className="text-white font-medium lg:w-1/4 text-right lg:mr-12 mb-2 lg:mb-0">
             Add an option
           </span>
           <div className="flex justify-center items-center w-2/3">
