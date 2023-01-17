@@ -140,14 +140,16 @@ function BusinessFilter() {
               <span className="px-2 mb-1 font-medium">15</span>
             </div>
 
-            <div className="w-full lg:w-1/4 hidden lg:block">
+            <div className="w-full text-md font-medium lg:w-1/4 hidden lg:block text-center">
               <div>Over 15 items?</div>
               <div className="whitespace-nowrap">
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   className="whitespace-nowrap fa-md"
                 />
-                <Link to="#">More info here</Link>
+                <Link to="#" className="text-sm">
+                  More info here
+                </Link>
               </div>
             </div>
           </div>
