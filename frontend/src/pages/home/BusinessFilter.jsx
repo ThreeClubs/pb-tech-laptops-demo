@@ -13,6 +13,7 @@ function BusinessFilter() {
   const [field, setField] = useState("");
   const [feature, setFeature] = useState("");
   const [toggleLabel, setToggleLabel] = useState(false);
+  const [toggleSwitch, setToggleSwitch] = useState(false);
 
   const theme = createTheme({
     palette: {
@@ -31,6 +32,11 @@ function BusinessFilter() {
 
   const handleFeatureChange = (event) => {
     setFeature(event.target.value);
+  };
+
+  const handleToggleSwitch = (event) => {
+    setToggleLabel(!toggleLabel);
+    setToggleSwitchOn(!toggleSwitch);
   };
 
   const [checkboxValues, setCheckboxValues] = useState({
@@ -95,7 +101,7 @@ function BusinessFilter() {
               </div>
               <div className="flex justify-center items-center">
                 <ThemeProvider theme={theme}>
-                  <Switch onClick={() => setToggleLabel(!toggleLabel)} />
+                  <Switch onClick={handleToggleSwitch} />
                 </ThemeProvider>
 
                 {!toggleLabel && <span className="font-medium">Off</span>}

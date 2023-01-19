@@ -1,12 +1,8 @@
 require("dotenv").config();
 console.log(process.env.TEST); // verify .env working ( DEL later )
-
+const laptopRoutes = require("./routes/laptops");
 const cors = require("cors");
 const express = require("express");
-const recordRoutes = express.Router();
-// const mongoose = require("mongoose");
-const { MongoClient } = require("mongodb");
-// const routes = require("./routes/routes");
 
 // express app
 const app = express();
@@ -22,9 +18,9 @@ app.use((req, res, next) => {
   next();
 });
 
-
-
 // endpoint test
+
+app.use("/api", laptopRoutes);
 
 const port = process.env.PORT || 4002;
 
