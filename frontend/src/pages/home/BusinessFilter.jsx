@@ -39,7 +39,7 @@ function BusinessFilter() {
     chrome: false,
     compact: false,
     small: false,
-    cmedium: false,
+    medium: false,
     large: false,
   });
 
@@ -68,30 +68,10 @@ function BusinessFilter() {
                   inputProps={{ "aria-label": "Without label" }}
                   className="border-b-2 border-black"
                 >
-                  <MenuItem
-                    value=""
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    Select your field of expertise
-                  </MenuItem>
-                  <MenuItem
-                    value="Marketing/Advertising"
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    Marketing/Advertising
-                  </MenuItem>
-                  <MenuItem
-                    value="Education"
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    Learning/Education
-                  </MenuItem>
-                  <MenuItem
-                    value="IT"
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    Technology
-                  </MenuItem>
+                  <MenuItem value="">Select your field of expertise</MenuItem>
+                  <MenuItem value="Marketing">Marketing/Advertising</MenuItem>
+                  <MenuItem value="Education">Learning/Education</MenuItem>
+                  <MenuItem value="Technology">Technology</MenuItem>
                 </Select>
               </FormControl>
             </div>
@@ -292,30 +272,10 @@ function BusinessFilter() {
                   inputProps={{ "aria-label": "Without label" }}
                   className="border-b-2 border-black"
                 >
-                  <MenuItem
-                    value=""
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    Select Features
-                  </MenuItem>
-                  <MenuItem
-                    value="RAM"
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    RAM
-                  </MenuItem>
-                  <MenuItem
-                    value="Processor"
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    Processor
-                  </MenuItem>
-                  <MenuItem
-                    value="Brand"
-                    style={{ color: "#fff", background: "#000" }}
-                  >
-                    Brand
-                  </MenuItem>
+                  <MenuItem value="">Select Features</MenuItem>
+                  <MenuItem value="Acer">RAM</MenuItem>
+                  <MenuItem value="MacBook">Processor</MenuItem>
+                  <MenuItem value="Lenovo">Brand</MenuItem>
                 </Select>
               </FormControl>
             </div>
