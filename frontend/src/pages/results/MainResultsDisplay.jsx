@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 export default function ResultDisplay() {
   const [laptops, setLaptops] = useState([]);
 
+  axios.create({
+    baseURL: "http://localhost:4001/",
+  });
+
   useEffect(() => {
     axios
       .get("/api/laptops/")
