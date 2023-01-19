@@ -36,7 +36,7 @@ function BusinessFilter() {
 
   const handleToggleSwitch = (event) => {
     setToggleLabel(!toggleLabel);
-    setToggleSwitchOn(!toggleSwitch);
+    setToggleSwitch(!toggleSwitch);
   };
 
   const [checkboxValues, setCheckboxValues] = useState({
@@ -74,7 +74,6 @@ function BusinessFilter() {
                   inputProps={{ "aria-label": "Without label" }}
                   className="border-b-2 border-black"
                 >
-                  <MenuItem value="">Select your field of expertise</MenuItem>
                   <MenuItem value="Marketing">Marketing/Advertising</MenuItem>
                   <MenuItem value="Education">Learning/Education</MenuItem>
                   <MenuItem value="Technology">Technology</MenuItem>
@@ -277,11 +276,11 @@ function BusinessFilter() {
                   displayEmpty
                   inputProps={{ "aria-label": "Without label" }}
                   className="border-b-2 border-black"
+                  placeholder="Select your desired brand"
                 >
-                  <MenuItem value="">Select Features</MenuItem>
-                  <MenuItem value="Acer">RAM</MenuItem>
-                  <MenuItem value="MacBook">Processor</MenuItem>
-                  <MenuItem value="Lenovo">Brand</MenuItem>
+                  <MenuItem value="Acer">Acer</MenuItem>
+                  <MenuItem value="MacBook">MacBook</MenuItem>
+                  <MenuItem value="Lenovo">Lenovo</MenuItem>
                 </Select>
               </FormControl>
             </div>
