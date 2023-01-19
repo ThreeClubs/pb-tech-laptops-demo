@@ -8,11 +8,11 @@ export default function DisplayByExpertise() {
       <div className="flex mb-4">
         <div className="w-3/4">
           <h1>
-            Most popular laptops for businesses in {dummyExpertise} sector
+            Most popular laptops for businesses in the {dummyExpertise} sector
           </h1>
           <p>
             Here is a selection of top laptop choices for {dummyExpertise}{" "}
-            businesses hand-picked from our data{" "}
+            businesses, hand-picked from our data!{" "}
           </p>
         </div>
 

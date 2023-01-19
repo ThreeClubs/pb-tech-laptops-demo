@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 const MongoClient = require("mongodb").MongoClient;
 
-const url = process.env.MONGO_URI;
+const uri = process.env.MONGO_URI;
 const dbName = "pb_tech";
 
 router.get("/laptops", (req, res) => {
-  MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
+  MongoClient.connect(uri, { useNewUrlParser: true }, (err, client) => {
     if (err) {
       res.status(500).json({ error: "Error connecting to the database" });
       return;

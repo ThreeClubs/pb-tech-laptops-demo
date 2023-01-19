@@ -265,7 +265,7 @@ function BusinessFilter() {
 
         <div className=" flex flex-col lg:flex-row items-center py-6">
           <span className="text-white font-medium lg:w-1/4 text-right lg:mr-12 mb-2 lg:mb-0">
-            Add an option
+            Select a brand
           </span>
           <div className="flex justify-center items-center w-2/3">
             <div className="px-4 w-full">
