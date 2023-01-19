@@ -11,6 +11,7 @@ import {
   faVideoCamera,
 } from "@fortawesome/free-solid-svg-icons";
 import BusinessFilter from "./BusinessFilter";
+import { Link } from "react-router-dom";
 
 function HomeSearch() {
   const [isActive, setIsActive] = useState(false);
@@ -122,11 +123,13 @@ function HomeSearch() {
             type="submit"
             className="w-full lg:w-64 m-4 px-4 py-2 bg-black hover:text-black hover:bg-white text-white text-xl"
           >
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="whitespace-nowrap fa-lg mr-2"
-            ></FontAwesomeIcon>
-            <span> Search</span>
+            <Link to="/results">
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="whitespace-nowrap fa-lg mr-2"
+              ></FontAwesomeIcon>
+              <span> Search</span>
+            </Link>
           </button>
         </div>
       )}

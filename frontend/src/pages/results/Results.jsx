@@ -1,4 +1,3 @@
-
 import MainResultsDisplay from "./MainResultsDisplay";
 import DisplayByExpertise from "./DisplayByExpertise";
 
