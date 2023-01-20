@@ -77,7 +77,7 @@ function Home() {
                 </h1>
                 {!isActive && (
                   <img
-                    className="lg:w-full lg:w-96 lg:relative lg:top-0 lg:top-32 lg:block lg: hidden lg:-mb-32"
+                    className="lg:w-full lg:w-96 lg:relative lg:top-0 lg:top-32 lg:block lg: hidden"
                     src={Installing}
                     alt="computer artwork"
                   ></img>
