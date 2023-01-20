@@ -10,7 +10,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/results" element={<Results />} />
       </Routes>
       {/* Footer */}
       <Footer />

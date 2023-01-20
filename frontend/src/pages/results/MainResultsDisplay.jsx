@@ -1,30 +1,18 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
 
-export default function ResultDisplay() {
-  const [laptops, setLaptops] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:4001/api/laptops/")
-      .then((res) => {
-        setLaptops(...[res.data.laptops]);
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
+export default function ResultDisplay({ laptops }) {
   console.log(laptops);
-
   return (
-    <div className="max-w-6xl m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="max-w-6xl m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-10">
       {laptops.length > 0 &&
         laptops.map((laptop) => (
           <div
             key={laptop._id}
-            className="flex flex-col justify-center items-center border border-transparent"
+            className="flex flex-col justify-center items-center border border-transparent mb-4"
           >
             <div className="h-1/2 p-2 flex justify-center items center">
               <img
@@ -43,7 +31,7 @@ export default function ResultDisplay() {
                     <p className="text-sm text-sky-700">
                       {laptop.os} Operating System &#x2022; {laptop.screen}{" "}
                       Screen &#x2022; Trusted {laptop.brand} Quality &#x2022;{" "}
-                      {laptop.quanity} Left In Stock &#x2022; Ideal For{" "}
+                      {laptop.quantity} Left In Stock &#x2022; Ideal For{" "}
                       {laptop.expertise} Professionals
                     </p>
                   </div>
@@ -59,10 +47,18 @@ export default function ResultDisplay() {
               </div>
 
               <div className="flex mb-4">
-                <button className="rounded-sm py-2 w-full mx-1 font-bold text-sm border-2 text-amber-500 border-amber-500">
+                <button className="rounded-sm py-2 w-full mx-1 font-bold text-sm border-2 text-amber-500 border-amber-500 hover:bg-amber-500 hover:text-white">
+                  <FontAwesomeIcon
+                    icon={faShoppingCart}
+                    className="whitespace-nowrap fa-lg mr-2"
+                  ></FontAwesomeIcon>{" "}
                   Add To Cart
                 </button>
-                <button className="rounded-sm py-2 w-full mx-1 font-bold text-sm bg-black text-white border-2 border-black">
+                <button className="rounded-sm py-2 w-full mx-1 font-bold text-sm bg-black text-white border-2 border-black hover:bg-white hover:text-black">
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="whitespace-nowrap fa-lg mr-2"
+                  ></FontAwesomeIcon>{" "}
                   Learn More
                 </button>
               </div>

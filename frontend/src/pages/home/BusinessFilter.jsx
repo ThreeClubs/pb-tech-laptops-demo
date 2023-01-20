@@ -4,7 +4,8 @@ import Switch from "@mui/material/Switch";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { Link } from "react-router-dom";
+import ModalPopup from "../../assets/img/Over_15_items-Popup.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -14,6 +15,7 @@ function BusinessFilter() {
   const [feature, setFeature] = useState("");
   const [toggleLabel, setToggleLabel] = useState(false);
   const [toggleSwitch, setToggleSwitch] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const theme = createTheme({
     palette: {
@@ -58,7 +60,17 @@ function BusinessFilter() {
   };
 
   return (
-    <div className="w-full dark-orange-background mx-4 sm:mx-0 flex">
+    <div className="dark-orange-background mx-4 sm:mx-0 mx-auto flex">
+      {showModal && (
+        <div
+          className=" bg-gray-900 bg-opacity-50 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+          onClick={() => setShowModal(false)}
+        >
+          <div className="justify-center items-center flex ">
+            <img alt="modal pic" src={ModalPopup}></img>
+          </div>
+        </div>
+      )}
       <div className="mx-auto sm:w-5/6">
         <div className="flex lg:flex-row py-6 flex-col items-center border-b border-black">
           <span className="text-white lg:text-right lg:mr-12 text-md mb-2 lg:mb-0 font-medium p-1 lg:w-1/4">
@@ -68,14 +80,18 @@ function BusinessFilter() {
             <div className="px-4 w-full">
               <FormControl fullWidth>
                 <Select
-                  value={field}
                   onChange={handleFieldChange}
                   displayEmpty
                   inputProps={{ "aria-label": "Without label" }}
                   className="border-b-2 border-black"
+                  renderValue={
+                    field !== ""
+                      ? undefined
+                      : () => "Select your field of expertise"
+                  }
                 >
-                  <MenuItem value="Marketing">Marketing/Advertising</MenuItem>
-                  <MenuItem value="Education">Learning/Education</MenuItem>
+                  <MenuItem value="Marketing">Marketing</MenuItem>
+                  <MenuItem value="Education">Education</MenuItem>
                   <MenuItem value="Technology">Technology</MenuItem>
                 </Select>
               </FormControl>
@@ -127,14 +143,15 @@ function BusinessFilter() {
 
             <div className="w-full text-md font-medium lg:w-1/4 hidden lg:block text-center">
               <div>Over 15 items?</div>
-              <div className="whitespace-nowrap">
+              <div
+                className="whitespace-nowrap hover:text-white"
+                onClick={() => setShowModal(true)}
+              >
                 <FontAwesomeIcon
                   icon={faArrowRight}
-                  className="whitespace-nowrap fa-md"
+                  className="whitespace-nowrap fa-md mr-2"
                 />
-                <Link to="#" className="text-sm">
-                  More info here
-                </Link>
+                More info here
               </div>
             </div>
           </div>
@@ -265,22 +282,23 @@ function BusinessFilter() {
 
         <div className=" flex flex-col lg:flex-row items-center py-6">
           <span className="text-white font-medium lg:w-1/4 text-right lg:mr-12 mb-2 lg:mb-0">
-            Select a brand
+            Add an option
           </span>
           <div className="flex justify-center items-center w-2/3">
             <div className="px-4 w-full">
               <FormControl fullWidth>
                 <Select
-                  value={feature}
                   onChange={handleFeatureChange}
                   displayEmpty
                   inputProps={{ "aria-label": "Without label" }}
                   className="border-b-2 border-black"
-                  placeholder="Select your desired brand"
+                  renderValue={
+                    feature !== "" ? undefined : () => "Select a feature"
+                  }
                 >
-                  <MenuItem value="Acer">Acer</MenuItem>
-                  <MenuItem value="MacBook">MacBook</MenuItem>
-                  <MenuItem value="Lenovo">Lenovo</MenuItem>
+                  <MenuItem value="Memory">Memory</MenuItem>
+                  <MenuItem value="Processor">Processor</MenuItem>
+                  <MenuItem value="Graphics">Graphics</MenuItem>
                 </Select>
               </FormControl>
             </div>
