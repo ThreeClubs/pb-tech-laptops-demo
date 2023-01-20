@@ -25,7 +25,7 @@ app.use("/api", laptopRoutes);
 const port = process.env.PORT || 4002;
 
 app.get("/", (req, res) => {
-  res.send("Hello, Frontend. I'm Backend. Nice to meet you!");
+  res.send("*sings little teapot tune* I'm a little endpoint short and sweet. This is my message and I won't repeat.");
 });
 
 app.listen(port, () => {
